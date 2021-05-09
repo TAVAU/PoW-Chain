@@ -5,6 +5,7 @@ const db = require('./db');
 const {PUBLIC_KEY} = require('./config');
 const TARGET_DIFFICULTY = BigInt("0x0" + "F".repeat(63));
 const BLOCK_REWARD = 10;
+const fs = require('fs');
 
 let mining = true;
 mine();
@@ -36,8 +37,13 @@ function mine() {
   block.execute();
 
   db.blockchain.addBlock(block);
+  const msg = `Mined block #${db.blockchain.blockHeight()} with a hash of ${block.hash()} at nonce ${block.nonce}\n`;
+  console.log(msg);
 
-  console.log(`Mined block #${db.blockchain.blockHeight()} with a hash of ${block.hash()} at nonce ${block.nonce}`);
+  fs.appendFileSync('mine_message.txt', msg,(err) => {
+    if (err) throw err;
+    console.log('The file has been saved!');
+  });
 
   setTimeout(mine, 2500);
 }
