@@ -1,9 +1,0 @@
-Mined block #1 with a hash of 0574247222ff6a7a171798f7de44851c0419e520867cce27e6f6b6b923fca570 at nonce 2Mined block #1 with a hash of 0b8fbf22f49a72cc9cd72a39e0b075d6620890bec754928f27b8336dcc1e098e at nonce 24Mined block #1 with a hash of 0df25879d8b4f107bc0d5fe880d075db76a03aed9f080106d950f9d1e2eaff2a at nonce 30Mined block #2 with a hash of 0c07e1babfe856c042794c6d546359df2dcefff37206232af256bff1deb19873 at nonce 32Mined block #3 with a hash of 06788b99e2cd399546c8930bbf6d3731af1eab4b0b09dd696cb42eee932f0457 at nonce 40Mined block #4 with a hash of 0c4053dfa7b0f5c89d102a54ef23428c561106beeec7bf1388106b99082abc62 at nonce 3Mined block #5 with a hash of 0810782a5d2ad83a437656488fb0fb060b11be8d50f0b7774a5602e84446b261 at nonce 1Mined block #6 with a hash of 04823cbbbe7626d55875cd4aaaec3397e430b0a35c40b55a4214d4bf0074cd10 at nonce 0Mined block #1 with a hash of 08bac98c4b0c8c9d4408d8aff285b631c87f814248215cd3a96a2a4a5bdcb2b7 at nonce 20
-Mined block #2 with a hash of 0bbe259efdaffdaa09b385f96a3d94ad98bc025b83a4dab5df4e43d66b7b073a at nonce 13
-Mined block #3 with a hash of 0fe09bb1730b7d177e9f8b5a67fdd21f8f79bb4dd93954c5737acfdc2f886e21 at nonce 49
-Mined block #4 with a hash of 07ecfdd51934bf4cf098b5e7ac960cea588508ad741f7d82f29b051cf4a1c157 at nonce 4
-Mined block #5 with a hash of 0def5ea21748df5eb5f859993b5bedc4b63d7eaa59aa971dd1547d4a7e79e4da at nonce 7
-Mined block #6 with a hash of 0c33a8eff5628b708f2594fed6ee6d2eaf8e89b3f54c2f3942d34c75454eabc7 at nonce 2
-Mined block #7 with a hash of 0ad0f629a30432ea51b38d3456cc2884d4f32d8254a0673ef1440fe2a9984613 at nonce 5
-Mined block #8 with a hash of 0046db0b6543305a28687c260ef0c5af8200c2daa5c3dce7f5c1f7f99e596afd at nonce 8
-Mined block #9 with a hash of 003653eb68724214e62fffda011ef13facbd0422a49a982a96ef25b9e113ef98 at nonce 3

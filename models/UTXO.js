@@ -4,6 +4,10 @@ class UTXO {
     this.amount = amount;
     this.spent = false;
   }
+
+  spend() {
+    this.spent = true;
+  }
 }
 
 module.exports = UTXO;

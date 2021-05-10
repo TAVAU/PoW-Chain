@@ -21,8 +21,18 @@ function stopMining() {
 
 function mine() {
   if(!mining) return;
-
   const block = new Block();
+  try {
+    fs.readFile('a', 'utf8', (err, data) => {
+      if (err) throw err;
+      console.log('reading from file');
+      cur_state = JSON.parse(data);
+      const msg = `Mined block #${cur_state.block_number} with a hash of ${cur_state.hash} at nonce ${cur_state.nonce}`;
+      console.log(msg);
+    });
+  } catch (err) {
+    console.error(err)
+  }
 
   // TODO: add transactions from the mempool
 
@@ -37,10 +47,16 @@ function mine() {
   block.execute();
 
   db.blockchain.addBlock(block);
-  const msg = `Mined block #${db.blockchain.blockHeight()} with a hash of ${block.hash()} at nonce ${block.nonce}\n`;
+  const msg = `Mined block #${db.blockchain.blockHeight()} with a hash of ${block.hash()} at nonce ${block.nonce}`;
   console.log(msg);
 
-  fs.appendFileSync('mine_message.txt', msg,(err) => {
+  const state = {
+    block_number: db.blockchain.blockHeight(),
+    hash: block.hash(),
+    nonce: block.nonce,
+  }
+
+  fs.writeFile('mine_state', JSON.stringify(state), 'utf-8', (err) => {
     if (err) throw err;
     console.log('The file has been saved!');
   });
